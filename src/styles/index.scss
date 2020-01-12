@@ -11,3 +11,17 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.outerDiv{
+    margin-top: 15%;
+    text-align: center;
+}
+.outerDiv div,i{
+    background-color: grey;
+    display: inline;
+    font-size: 50px;
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    line-height: 65px;
+   
+}
