@@ -22,10 +22,10 @@ function MyCounter(props) {
 			<div className="six">{props.day % 10}</div>
 			<div className="five">{props.hur % 10}</div>
 			<div>:</div>
-			<div className="four">{props.din % 10}</div>
+			<div className="four">{props.din % 6}</div>
 			<div className="three">{props.min % 10}</div>
 			<div>:</div>
-			<div className="two">{props.dec % 10}</div>
+			<div className="two">{props.dec % 6}</div>
 			<div className="one">{props.sec % 10}</div>
 		</div>
 	);
@@ -42,11 +42,12 @@ MyCounter.propTypes = {
 let counter = 0;
 setInterval(function() {
 	const oneSec = Math.floor(counter / 10);
-	const tenSec = Math.floor(counter / 100);
+	let tenSec = Math.floor(counter / 100);
 	const oneMin = Math.floor(counter / 600);
 	const tenMin = Math.floor(counter / 6000);
 	const oneHour = Math.floor(counter / 36000);
 	const oneDay = Math.floor(counter / 360000);
+
 	ReactDOM.render(
 		<MyCounter
 			sec={oneSec}
