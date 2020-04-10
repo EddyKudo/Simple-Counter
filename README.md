@@ -40,6 +40,7 @@ To publish your website you need to `push your code to your github repository` a
 $ npm run deploy
 ```
 
+
 ## Other features
 
 - Automatic Code Formatting: Use of [Prettier](https://prettier.io/) for automatic code indentation and formatting.
